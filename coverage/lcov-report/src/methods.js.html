@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/methods.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> methods.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>43/43</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>10/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>13/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>43/43</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">75×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">77×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">53×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var request = require('request'),
+    extend = require('extend-object'),
+    Q = require('q');
+&nbsp;
+var exports = module.exports = {};
+&nbsp;
+var defaultedRequestObj;
+var defaultsJar;
+var globalRequestJar = request.jar();
+&nbsp;
+/**
+Perform HTTP request
+@param {string} method - the HTTP method to use
+@param {string} url - fully qualified url
+@param {Object} [params] - additional request options, see the popular {@link https://github.com/request/request#requestoptions-callback request library} for options
+@returns {Promise} Promise which will resolve to a {@link zuukaResponse} object
+@alias module:zuuka.request
+@example
+var request = zuuka.request("GET", "http://httpbin.org/get", {
+    'auth': {'user': 'username','pass': 'password'}
+});
+expect(request).to.have.status(200);
+ */
+exports.request = function (method, url, params) {
+    var options = extend({
+        url: url,
+        method: method,
+        json: true
+    }, params || {} );
+&nbsp;
+    // options.jar is either a jar object or true
+    // In case user passes {jar: true} option to request, we need reference to global jar to do assertions.
+    options.jar = options.jar || defaultsJar;
+    if (options.jar === true) {
+        options.jar = globalRequestJar;
+    } else if (options.jar === undefined) {
+        // Create new jar for this request for backwards compatibility
+        options.jar = request.jar();
+    }
+&nbsp;
+    var deferred = Q.defer();
+    var reqObj = defaultedRequestObj || request;
+    var timer = process.hrtime();
+    reqObj(options, function (error, response, body) {
+        var elapsedTime = process.hrtime(timer);
+        var elapsedMilliseconds = (elapsedTime[0] * 1000) + (elapsedTime[1] / 1000000);
+/**
+zuuka Response Object
+@desc Encapsulates the results of a HTTP call into a single object
+@typedef {Object} zuukaResponse
+@property {Error} error - An error when applicable
+@property {Object} response - An {@link http://nodejs.org/api/http.html#http_http_incomingmessage http.IncomingMessage} object
+@property {String|Buffer|Object} body - The response body. Typically a JSON object unless the json option has been set to false, in which case will be either a String or Buffer
+@property {Object} jar - A {@link https://github.com/goinstant/tough-cookie tough cookie} jar
+@property {String} url - The request's original URL
+@property {Number} responseTime - The time taken to make the request (including redirects) at millisecond resolution
+ */
+        deferred.resolve({
+            error : error,
+            response: response,
+            body: body,
+            jar: options.jar,
+            url: url,
+            responseTime: elapsedMilliseconds
+        });
+    });
+    return deferred.promise;
+};
+&nbsp;
+/**
+Perform HTTP GET request
+@param {string} url - fully qualified url
+@param {Object} [params] - additional request options, see the popular {@link https://github.com/request/request#requestoptions-callback request library} for options
+@returns {Promise} Promise which will resolve to a {@link zuukaResponse} object
+@alias module:zuuka.get
+ */
+exports.get = function(url, params) {
+    return exports.request('GET', url, params);
+};
+&nbsp;
+/**
+Perform HTTP HEAD request
+@param {string} url - fully qualified url
+@param {Object} [params] - additional request options, see the popular {@link https://github.com/request/request#requestoptions-callback request library} for options
+@returns {Promise} Promise which will resolve to a {@link zuukaResponse} object
+@alias module:zuuka.head
+ */
+exports.head = function(url, params) {
+    return exports.request('HEAD', url, params);
+};
+&nbsp;
+/**
+Perform HTTP OPTIONS request
+@param {string} url - fully qualified url
+@param {Object} [params] - additional request options, see the popular {@link https://github.com/request/request#requestoptions-callback request library} for options
+@returns {Promise} Promise which will resolve to a {@link zuukaResponse} object
+@alias module:zuuka.options
+ */
+exports.options = function(url, params) {
+    return exports.request('OPTIONS', url, params);
+};
+&nbsp;
+var extendWithData = function (data, params) {
+    return extend({body: data}, params);
+};
+&nbsp;
+&nbsp;
+/**
+Perform HTTP POST request
+@param {string} url - fully qualified url
+@param {Object} data - a JSON serializable object (unless json is set to false in params, in which case this should be a buffer or string)
+@param {Object} [params] - additional request options, see the popular {@link https://github.com/request/request#requestoptions-callback request library} for options
+@returns {Promise} Promise which will resolve to a {@link zuukaResponse} object
+@alias module:zuuka.post
+ */
+exports.post = function (url, data, params) {
+    return exports.request('POST', url, extendWithData(data, params));
+};
+&nbsp;
+/**
+Perform HTTP PATCH request
+@param {string} url - fully qualified url
+@param {Object} data - a JSON serializable object (unless json is set to false in params, in which case this should be a buffer or string)
+@param {Object} [params] - additional request options, see the popular {@link https://github.com/request/request#requestoptions-callback request library} for options
+@returns {Promise} Promise which will resolve to a {@link zuukaResponse} object
+@alias module:zuuka.patch
+ */
+exports.patch = function (url, data, params) {
+    return exports.request('PATCH', url, extendWithData(data, params));
+};
+&nbsp;
+&nbsp;
+/**
+Perform HTTP PUT request
+@param {string} url - fully qualified url
+@param {Object} data - a JSON serializable object (unless json is set to false in params, in which case this should be a buffer or string)
+@param {Object} [params] - additional request options, see the popular {@link https://github.com/request/request#requestoptions-callback request library} for options
+@returns {Promise} Promise which will resolve to a {@link zuukaResponse} object
+@alias module:zuuka.put
+ */
+exports.put = function (url, data, params) {
+    return exports.request('PUT', url, extendWithData(data, params));
+};
+&nbsp;
+/**
+Perform HTTP DELETE request
+@param {string} url - fully qualified url
+@param {Object} [data] - a JSON serializable object (unless json is set to false in params, in which case this should be a buffer or string)
+@param {Object} [params] - additional request options, see the popular {@link https://github.com/request/request#requestoptions-callback request library} for options
+@returns {Promise} Promise which will resolve to a {@link zuukaResponse} object
+@alias module:zuuka.delete
+ */
+exports.delete = function(url, data, params) {
+    return exports.request('DELETE', url, extendWithData(data, params));
+};
+&nbsp;
+&nbsp;
+/**
+Alias for zuuka.delete. Perform HTTP DELETE request.
+@param {string} url - fully qualified url
+@param {Object} [data] - a JSON serializable object (unless json is set to false in params, in which case this should be a buffer or string)
+@param {Object} [params] - additional request options, see the popular {@link https://github.com/request/request#requestoptions-callback request library} for options
+@returns {Promise} Promise which will resolve to a {@link zuukaResponse} object
+@alias module:zuuka.del
+ */
+exports.del = function(url, data, params) {
+    return exports.delete(url, data, params);
+};
+&nbsp;
+/**
+Sets the default options applied to all future requests.
+@param {Object} [defaults] - default request options, see the popular {@link https://github.com/request/request#requestoptions-callback request library} for options
+@alias module:zuuka.setRequestDefaults
+ */
+exports.setRequestDefaults = function(defaults) {
+    defaultsJar = defaults.jar; // We want this copied also if it's undefined
+    defaultedRequestObj = request.defaults(defaults);
+};
+&nbsp;
+/**
+Clears any previously set default options.
+@alias module:zuuka.clearRequestDefaults
+ */
+exports.clearRequestDefaults = function () {
+  defaultedRequestObj = undefined;
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 12 2020 11:35:53 GMT-0300 (Brasilia Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

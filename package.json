@@ -1,0 +1,60 @@
+{
+  "name": "zuuka-framework",
+  "version": "1.0.0-Demo-Version",
+  "description": "Zuuka is an API testing framework designed to test JSON REST endpoints. The library offers a BDD testing style and fully exploits javascript promises",
+  "main": "src/zuuka.js",
+  "license": "MIT",
+  "contributors": [
+    "Lucas Rafael Di Blasi <lucas_blasi@trimble.com> (https://www.linkedin.com/in/lucas-di-blasi-894352aa/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasblasi/zuuka-framework.git"
+  },
+  "keywords": [
+    "test",
+    "API",
+    "REST",
+    "HTTP",
+    "JSON",
+    "mocha",
+    "chai",
+    "BDD"
+  ],
+  "dependencies": {
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-subset": "1.6.0",
+    "extend-object": "1.0.0",
+    "istanbul": "^0.4.5",
+    "istanbul-reports": "^3.0.2",
+    "q": "1.5.1",
+    "request-debug": "0.2.0",
+    "superagent": "5.2.2",
+    "tv4": "1.3.0"
+  },
+  "devDependencies": {
+    "codeclimate-test-reporter": "0.5.1",
+    "jaguarjs-jsdoc": "1.1.0",
+    "jsdoc": "3.6.4",
+    "mocha": "7.1.2",
+    "rewire": "5.0.0",
+    "simplifyify": "8.0.1",
+    "sinon": "9.0.2"
+  },
+  "scripts": {
+    "zi": "npm install",
+    "test": "istanbul cover _mocha"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasblasi/zuuka-framework/issues"
+  },
+  "homepage": "https://github.com/lucasblasi/zuuka-framework#readme",
+  "directories": {
+    "test": "test"
+  },
+  "author": "Lucas Di Blasi <lucas_blasi@trimble.com>"
+}
