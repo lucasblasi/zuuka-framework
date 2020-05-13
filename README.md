@@ -4,7 +4,6 @@ Zuuka is an API testing framework designed to perform end to end tests on JSON R
 
 The library offers a BDD testing style and fully exploits javascript promises - the resulting tests are simple, clear and expressive. zuuka is built on node.js, mocha, chai and request.
 
-This readme offers an introduction to the library. For more information, visit zuuka's documentation and tests which demonstrate all of zuuka's capabilities. In addition, example tests of publicly accessible APIs are available in the 
 
 ## Features
  * HTTP specific assertions. Allows testing of:
