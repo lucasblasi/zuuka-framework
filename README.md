@@ -41,7 +41,7 @@ zuuka makes use of the request library and as such boasts a comprehensive reques
 
 Below is an example of making a HTTP GET request:
 ```js
-var zuuka = require('zuuka');
+var zuuka = require("zuuka-framework");
 
 describe("zuuka", function() {
     it("should offer simple HTTP request capabilities", function () {
@@ -52,7 +52,7 @@ describe("zuuka", function() {
 
 Below is an example of making a HTTP POST request:
 ```js
-var zuuka = require('zuuka');
+var zuuka = require("zuuka-framework");
 
 describe("zuuka", function() {
     it("should offer simple HTTP request capabilities", function () {
@@ -70,7 +70,7 @@ The assertion is performed once the response is received (i.e. the request promi
 
 Below is an example of testing the status code of a HTTP GET request:
 ```js
-var zuuka = require('zuuka'),
+var zuuka = require("zuuka-framework"),
     expect = zuuka.expect;
 
 describe("zuuka", function() {
@@ -90,7 +90,7 @@ As this library focuses on testing REST APIs, the tests are naturally asynchrono
 It is important that tests wait for all requests and assertions to be completed. To help, zuuka includes a wait method. This returns a promise which will be fulfilled once all assertions have been performed. Furthermore, zuuka will fail any tests which do not wait for assertions to complete. Below is a test using the wait method.
 
 ```js
-var zuuka = require('zuuka'),
+var zuuka = require("zuuka-framework"),
     expect = zuuka.expect;
 
 describe("zuuka", function() {
